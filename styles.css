@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-image: linear-gradient(to right, #1c2230, #181e2a);
+  /* padding: 0 !important; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #616775;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+div.logo {
+  font-size: 1.6rem;
+  margin: 0.5rem;
+  color: #dfdee3;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  color: #616775;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-links li a:hover {
+  color: #dfdee3;
+}
+
+.navbar-links li:hover {
+  background: #6bbdc9;
+  border-radius: 3px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #dfdee3;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/* Banner Area Styling */
+
+section#banner-area {
+  background-image: linear-gradient(to right, #1c2230, #181e2a);
+  padding-top: 5%;
+  color: #dfdee3;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+div.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+div.banner-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.banner-image img {
+  width: 300px;
+  height: 350px;
+}
+
+div.banner-header h3 {
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+div.banner-header p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+div.banner-button {
+  margin-top: 30px;
+}
+
+div.banner-button a {
+  text-decoration: none;
+  padding: 10px 50px;
+  border-radius: 50px;
+  background: #6bbdc9;
+  color: #dfdee3;
+}
+
+.bottom-image {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  div.container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  div.banner-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.banner-header h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  div.banner-header p {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+
+  div.banner-button {
+    margin-left: 10px;
+  }
+}
+
+/* Services Area Styling */
+
+h2 {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #181e2a;
+}
+
+.title::before {
+  content: "";
+  background: #181e2a;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+
+.title::after {
+  content: "";
+  background: #181e2a;
+  height: 10px;
+  width: 50px;
+  /* margin-bottom: 40px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(22px);
+}
+
+section#services-area {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.fas {
+  width: 100px;
+  margin-top: 20px;
+}
+
+div.services-box1 {
+  padding: 20px;
+}
+
+div.services-box1 h4 {
+  padding: 5px;
+  margin-top: 25px;
+  color: #181e2a;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+div.services-box1 p {
+  color: #181e2a;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  div.services-box1 h4 {
+    font-size: 20px;
+  }
+
+  div.services-box1 p {
+    font-size: 14px;
+  }
+}
+
+
