@@ -402,6 +402,8 @@ div.product-boxes {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 div.product-grid-area {
