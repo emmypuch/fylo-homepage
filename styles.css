@@ -419,6 +419,7 @@ div.product-grid-area .box-1 {
   width: 270px;
   height: 150px;
   transition: all 0.5s;
+  margin-bottom: 15px;
 }
 
 div.product-grid-area .box-1:hover {
@@ -459,7 +460,7 @@ span.par {
   div.product-grid-area {
     display: flex;
     flex-direction: column;
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
   }
 }
 
